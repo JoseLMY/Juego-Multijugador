@@ -1,0 +1,239 @@
+body{
+    /* background-color: #000000; */
+    background: linear-gradient(to right, rgb(91 3 3), #000000);
+}
+
+#seleccionar-guerrero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: rgb(117, 0, 0);
+    font-family: Copperplate, Papyrus, fantasy;
+    height: 55px;
+    width: 647px;
+    font-size: 60px;
+    background-color: #00000073;
+    height: 109px;
+    width: 666px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.subtitulo{
+    font-family: Copperplate, Papyrus, fantasy;
+    color: rgb(192, 34, 6);
+}
+
+.tarjeta-guerrero{
+    height: 128px;
+    width: 187px;
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+    color: aliceblue;
+    background: rgb(91 3 3);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 16px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.tarjeta-guerrero img{
+    width: 101px;
+    margin: 5px;
+}
+
+.tarjetas, tarjetas-ataques{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tarjetas p{
+    display: flex;
+    align-items: center;
+}
+.selector{
+    margin: -7px;
+    display: inline-grid;
+}
+
+#boton-guerrero{
+    width: 627px;
+    background: linear-gradient(to right, rgb(91 3 3), rgb(188 0 0 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title2{
+    background-color: #00000073;
+    color: rgb(117, 0, 0);
+    font-size: 33px;
+    font-family: Copperplate, Papyrus, fantasy;
+    width: 566px;
+    height: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#seleccionar-ataque h2{
+    font-family: Copperplate, Papyrus, fantasy;
+    color: rgb(225 109 0);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorAtaques{
+    display: flex;
+}
+
+#boton-fuego{
+    width: 123px;
+    background: linear-gradient(to right, rgb(91 3 3), rgb(188 56 0 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+    margin: 5px;
+}
+#boton-agua{
+    width: 123px;
+    background: linear-gradient(to right, rgb(0 14 73), rgb(0 188 177 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+    margin: 5px;
+}
+#boton-tierra{
+    width: 123px;
+    background: linear-gradient(to right, rgb(69 13 3), rgb(133 65 53));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+#mensajes{
+    color: burlywood;
+    font-size: 14px;
+    font-family: Apple Chancery, cursive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    width: 166px;
+    background: linear-gradient(to right, rgb(91 3 3), rgb(188 0 0 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+}
+
+.ataque{
+    color: burlywood;
+    font-size: 11px;
+    font-family: Apple Chancery, cursive;
+    background-color: rgb(86 4 4 / 28%);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 100px 100px;
+}
+
+input:checked + label{
+    background-color: rgb(100, 26, 26);
+}
+
+#ver-mapa{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#ver-mapa h1{
+    background-color: #00000073;
+    color: rgb(117, 0, 0);
+    font-size: 33px;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+#mapa{
+    border: 2px solid white;
+}
+
+#BU{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#B{
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 127px;
+    background: linear-gradient(to right, rgb(91 3 3), rgb(188 0 0 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+    user-select: none;
+}
+.BS{
+    width: 127px;
+    background: linear-gradient(to right, rgb(91 3 3), rgb(188 0 0 / 68%));
+    font-family: Copperplate, Papyrus, fantasy;
+    color: white;
+    border-radius: 50px;
+    user-select: none;
+}
+
+@media (max-width: 768px){
+    .tarjetas, #contenedorAtaques{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        height: 66px;
+        width: 354px;
+        font-size: 28px;
+    }
+    #boton-guerrero{
+        width: 132px;
+        height: 50px;
+        
+    }
+    .title2{
+        height: 66px;
+        width: 354px;
+        font-size: 21px;
+    }
+    #boton-fuego{
+        width: 100px
+    }
+    #boton-agua{
+        width: 100px
+    }
+    #boton-tierra{
+        width: 100px
+    }
+    #ver-mapa h1{
+        font-size: 21px;
+    }   
+}

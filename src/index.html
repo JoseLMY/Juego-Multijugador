@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monsters</title>
+        <link rel="stylesheet" href="./styles.css">
+        </head>
+
+        <body>
+        <section id="seleccionar-guerrero">
+            
+            <h1 class="title">☠ ¡MONSTERS! ☠</h1>
+            <h2 class="subtitulo">Selecciona a tu guerrero ↴</h2>
+    
+            <div id="contenedorTarjetas" class="tarjetas">
+        
+            </div>     
+            <p>
+                <button id="boton-guerrero">Seleccionar</button>
+            </p>
+        </section>
+
+        <section id="ver-mapa">
+            <h1>☠ Encuentra oponentes en el mapa ☠</h1>
+            <canvas id="mapa"></canvas>
+            <div>
+                <DIV id="BU">
+                    <button id="B"
+                        ontouchstart = "moverArriba()"
+                        ontouchend = "detenerPersonaje()" 
+                        onmouseup="detenerPersonaje()" 
+                        onmousedown="moverArriba()">
+                        Arriba
+                    </button>
+                </div>
+                <button class="BS" 
+                    ontouchstart = "moverIzquierda()"
+                    ontouchend = "detenerPersonaje()"
+                    onmouseup="detenerPersonaje()" 
+                    onmousedown="moverIzquierda()">
+                    Izquierda
+                </button>
+                <button class="BS" 
+                    ontouchstart = "moverAbajo()"
+                    ontouchend = "detenerPersonaje()"
+                    onmouseup="detenerPersonaje()" 
+                    onmousedown="moverAbajo()">
+                    Abajo</button>
+                <button class="BS" 
+                    ontouchstart = "moverDerecha()"
+                    ontouchend = "detenerPersonaje()"
+                    onmouseup="detenerPersonaje()" 
+                    onmousedown="moverDerecha()">
+                    Derecha</button>
+            </div>   
+        </section>
+
+        <section id="seleccionar-ataque">
+            
+            <div class="title2">
+                <h1>☠ ¡MONSTERS! ☠</h1>
+            </div>
+            
+            <div>
+                <h2>Selecciona un ataque</h2>
+                <div id="contenedorAtaques">
+                    <!-- <button id="boton-fuego">Fuego 🔥</button>
+                    <button id="boton-agua">Agua 💧</button>
+                    <button id="boton-tierra">Tierra 🌱</button> -->
+                </div>
+            </div>
+
+            <div id="mensajes" > 
+                <p id="notificacion"></p> 
+                <section id="reiniciar">
+                    <p>
+                        <button id="boton-reiniciar">Volver a Jugar</button>
+                    </p>
+                </section>     
+            </div>
+            
+            <div class="ataque">
+                <div>
+                    <p id="vidasJugador">0</p>
+                    <p id="luchadorJugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div>
+                    <p id="vidasEnemigo">0</p>
+                    <p id="luchadorEnemigo"></p>
+                    <div id="ataque-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./cod_juego.js"></script>
+    </body>
+</html>
